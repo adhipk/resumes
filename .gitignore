@@ -1,0 +1,8 @@
+.tmp.driveupload
+
+*.fls
+*.out
+*.fdb_latexmk
+*.log
+*.synctex.gz
+*.aux

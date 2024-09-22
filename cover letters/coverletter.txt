@@ -1,10 +1,10 @@
 
 Dear Hiring Manager,
 
-I am excited to apply for the Software Engineer Internship role at Oracle. As a computer science graduate student at Arizona State University, I am passionate about programming and have a strong desire to contribute to innovative applications.
-I am well-versed in multiple programming languages including JavaScript, Python, and PHP. I have worked as a software developer for 3 years at multiple companies including Autoninja, a startup that developed CRM and analytics tools tailored for auto dealerships, and ICICI Lombard General Insurance Company, one of the largest insurance companies in India. At ICICI Lombard, I led a team of 3 developers tasked with building a new mobile-first customer portal that is fast and user-friendly even on budget phones.
+I am excited to apply for the Software Engineer Internship role at GreenHouse. As a recent graduate from Arizona State University, I am passionate about programming and have a strong desire to contribute to innovative applications.
+I am well-versed in multiple programming languages including JavaScript, Python, and PHP. I have worked as a software developer for 4 years at multiple companies including Autoninja, a startup that developed CRM and analytics tools tailored for auto dealerships, and ICICI Lombard General Insurance Company, one of the largest insurance companies in India. At ICICI Lombard, I led a team of 3 developers tasked with building a new mobile-first customer portal that is fast and user-friendly even on budget phones.
 I am proficient in web development frameworks such as Laravel, NodeJS, ReactJs, and Django. I have completed projects that involved designing responsive and dynamic user interfaces, connecting to APIs, and integrating back-end functionality.
-Apart from my professional experience, I have worked on personal projects to further hone my skills.
+Apart from my professional experience, I have worked on personal projects to further hone my skills. One such project is Libricasts, a webapp I built using Flask and htmx to fix uploading public domain audiobooks from Librivox to PocketCasts.
 I am a quick learner and have a strong desire to continue learning new technologies and programming languages. I believe that working as a software developer intern at Oracle will provide me with an opportunity to learn from experienced developers, contribute to exciting projects, and improve my programming skills.
 Thank you for considering my application. I am eager to discuss how I can contribute to your team as a software engineer intern.
 

@@ -1,7 +1,8 @@
 %-------------------------
 % Resume in Latex
-% Author: Adhip Kashyap
-% License: MIT
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -17,12 +18,20 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{hyperref}
-\usepackage{xcolor}
-\usepackage[sfdefault,light]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 \input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -31,10 +40,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-0.75in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -43,184 +52,207 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% defining link colour
-% \definecolor{myPurple}{HTML}{866dbf}
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\Large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that the generated pdf is machine readable/ATS parsable
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
-}
-% Just in case someone needs a heading that does not need to be in a list
-\newcommand{\resumeHeading}[4]{
-    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      {#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
+    \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://adhipk.dev/}{\Large Adhip Kashyap}} & Email : \href{mailto:adhip.kashyap@gmail.com}{adhip.kashyap@gmail.com}\\
-  \href{https://www.linkedin.com/in/adhip-kashyap/}{linkedin.com/in/adhip-kashyap} & Mobile: \href{tel:+6025155187}{+1-602-515-5187} \\
-  \href{https://adhipk.dev}{adhipk.dev}
-\end{tabular*}
+% ----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://adhipk.dev/}{\Large Adhip Kashyap}} & Email : \href{mailto:adhip.kashyap@gmail.com}{adhip.kashyap@gmail.com}\\
+%   \href{http://adhipk.dev/}{adhipk.dev} & Mobile : +1-602-515-5187 \\
+%   \href{https://github.com/adhipk/}{github.com/adhipk}
+%    & \href{https://linkedin.com/in/adhip-kashyap/}{linkedin.com/in/adhip-kashyap}\\
+% \end{tabular*}
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Arizona State University}{Tempe, AZ}
-      {M.Sc in Computer Science; GPA: 3.6/4}{Aug 2022 -- May 2024}
-    % \resumeSubheading
-    %   {PES University}{Bengaluru, India}
-    %   {B.Tech, Mechanical Engineering with Minors in Computer Science}{Aug 2015 -- July 2019}
-  \resumeSubHeadingListEnd
+\begin{center}
+    \textbf{\Huge \scshape Adhip Kashyap} \\ \vspace{1pt}
+    \small 602-515-5187 $|$ \href{mailto:adhip.kashyap@gmail.com}{\underline{adhip.kashyap@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/adhip-kashyap}{\underline{linkedin.com/in/adhip-kashyap}} $|$
+    \href{https://github.com/adhipk}{\underline{github.com/adhipk}}
+\end{center}
 
-%-----------Technical Skills----------
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
-  \resumeSubHeadingListStart
-    \resumeItem
-      {Languages}
-      {C, C++, Python, JavaScript, SQL, PHP, Java, Go, Scala, Rust.}
-    \resumeItem
-      {Technologies/Frameworks}
-      % {ReactJS, React Native, Redux, AngularJS, AWS, Flask, Laravel, Lumen, Spring, Springboot, Spring Data, PHPUnit, Pest,   neo4j, Redis, Docker, Sentry, nodeJS, ElasticSearch, Apache Spark, htmx, Vercel, Hadoop, Kubernetes, Vite, TailwindCSS, TailwindUI, AlpineJS, VueJS, SvelteJS, SolidJS, React Native, Next.js, GatsbyJS, NuxtJS, AstroJS, Bun, D3.js. }
-      {Pytorch, Tensorflow, huggingface, ML, xgboost, LLMs, pandas, Numpy, D3.js, AWS, Flask, Redis, docker, neo4j, Vercel}
-      % {AWS, Flask, Redis, Docker, neo4j, ElasticSearch, Apache Spark, Hadoop, Vercel, GCP. }
-      
-  \resumeSubHeadingListEnd
-  
-  
-%-----------EXPERIENCE-----------------
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, SQL, PHP, Java, Go, C/C++, Scala, Rust} \\
+     \textbf{Frameworks/Libraries}{: React, NextJs, Tailwind, D3.js, Flask, FastAPI, Apache Spark, Hadoop, Laravel, numPy, sciPy, openCV, PyTorch, TensorFlow, Hugging Face, XGBoost, pandas} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, AWS, Sentry, PostHog, Drizzle, Kubernetes, Redis, Neo4j, Vapi} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-        {InduzBuy}{Bengaluru, India}
-        {Software Developer Intern}{June 2023 -- Aug 2023}
-        \resumeItemListStart      
-          \resumeItem{GPT-3 Customer Requirement Parser}{Built a script using GPT-3 and string similarity metrics to parse buyer requirements, normalize supplier catalogue data and find the best matches.}
-          \resumeItem{Laravel Migration}{Spearheaded the migration of the existing code base from core PHP to Laravel --- introducing a streamlined Model-View-Controller architecture for improved modularity, scalability, and maintainability.}
-        \resumeItemListEnd
-    \resumeSubheading
-      {ICICI Lombard}{Bengaluru, India}
-      {Software Developer}{Oct 2019 -- Aug 2022}
+      {AI Software Engineer}{Oct 2025 -- Present}
+      {Hoag Hospital}{Orange County, CA}
       \resumeItemListStart
-      \resumeItem{Renewals Portal}{
-        % \begin{itemize}
-        %   \item 
-        Led the development team tasked with a major overhaul of the customer portal built on ReactJS and backend microservices in Lumen --- reducing renewal process time from 1 hour to under 10 minutes.
-          % \item Developed internal debugging tools using ElasticSearch deployed on AWS Lambda to identify and rectify data entry errors. This aided in catching critical errors in the application configs.
-        % \end{itemize}
-      }
-    \resumeItem{Rule Engine}
-      {Created a GraphDB-based decision tree using Neo4j to compute key components of the insurance premium, improving load times by 40\% with significantly better maintainability by pruning redundant rules.}
-      % {Wrote REST apis using SpringBoot to enable users add and modify existing rules, allowing stakeholders to quickly change configuration settings}
-
-    \resumeItem{Microservices Migration}{
-      Developed internal tools and implemented tests using AWS CloudWatch to monitor query times and cluster health for the Renewals platform.
-      Worked on the migration of the monolith platform to smaller microservices built in Lumen which improved fault tolerance and scalability, enabling the system to accommodate significanlt more concurrent users.
-    }
-    % \resumeItem{Unit Test Development}{Wrote and maintained unit tests using Pest and PHPUnit to ensure modules worked as intended and to identify potential bugs and issues.}
-        
-    \resumeItem{Work From Home Solution}
-      {Built a CRM mobile app during COVID-19 lockdowns using React Native and NodeJS, allowing customer relations executives to operate remotely using their phones.}
-      
-    \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {AutoNinja}{Bengaluru, India}
-      {Software Developer}{Jun 2019 -- Oct 2019}
-      \resumeItemListStart
-        % \resumeItem {CRM Solution}{Developed APIs in Python/Flask and Laravel for the pre-sales CRM console, enabling automated report generation and enhanced business management for clients.}
-        \resumeItem {Error Monitoring}{Implemented a custom error monitoring system using Sentry to track and resolve errors in the production environment, bringing the mean time to resolve from hours to 30 minutes.}
+        \resumeItem{Engineered production AI call center agents handling autonomous appointment booking and patient communications at scale.}
+        \resumeItem{Architected agent configuration management system using infrastructure-as-code principles with version control and automated deployment scripts across multiple environments.}
+        \resumeItem{Designed and implemented CI/CD pipelines enabling continuous deployment of agent updates, \textbf{reducing deployment cycles by 80\%} and enabling rapid iteration.}
+        \resumeItem{Built robust integrations with Epic EHR platform, enabling AI agents to autonomously manage imaging appointments while maintaining data integrity and HIPAA compliance.}
+        \resumeItem{Developed order upload and review workflows bridging AI agents with human staff, establishing quality assurance processes and maintaining high accuracy standards.}
+        \resumeItem{Led comprehensive compliance and adversarial testing program; engineered custom testing harnesses connected to Vapi voice platform for automated jailbreak evaluation and security assessment.}
+        \resumeItem{Created intelligent test case generation system from phone transcripts, \textbf{accelerating regression testing cycles by 60\%}} and enabling data-driven quality metrics.}
       \resumeItemListEnd
 
-    \resumeSubSubheading
-      {Technical Intern}{Jan 2019 -- Jun 2019}
+    \resumeSubheading
+      {Client Solutions Architect}{Apr 2025 -- Sep 2025}
+      {TechAhead}{Thousand Oaks, CA}
       \resumeItemListStart
-        \resumeItem{Event Management Portal}{Designed and implemented SQL tables and APIs in Laravel to create, manage, and track promotional events for clients. Built  a frontend in AngularJS enabling customers to access and download auto-generated reports.
-        }
+        \resumeItem{Architect scalable backend systems and enterprise infrastructure solutions, designing high-performance systems for mission-critical applications.}
+        \resumeItem{Develop comprehensive cost proposals and technical roadmaps translating client requirements into strategic infrastructure recommendations.}
+        \resumeItem{Design AI integration strategies that enhance application capabilities and create measurable business value for enterprise clients.}
       \resumeItemListEnd
-      \resumeSubHeadingListEnd
-    
 
-%-----------PROJECTS-----------------
-\section{Personal Projects}
-  \resumeSubHeadingListStart
-  \resumeSubItem{catELMo TCR-Epitope Binding Affinity Prediction}
-  {Designed and Trained a CNN to predict TCR-Epitope binding affinity using embeddings generated by catELMo, a bi-directional amino acid embedding model. The resulting model achieved an accuracy of 90\% on the test set.}
-  \resumeSubItem{LLM Science Exam}
-      {Trained a DeBerta-v2 LLM to answer STEM Multiple-choice questions as part of a Kaggle Competition. Implemented a RAG system using Cohere APIs and TF-IDF to provide the model with contextual information. Resulting Model had MAP@3 score of 0.92 on the competition test data set.}
-  \resumeSubItem{Scalable Data Processing Pipeline}
-      {Created a comprehensive data-processing pipeline to parse and analyse the open NYC taxi dataset using neo4j, Apache Spark, Hadoop, and Kubernetes.}
-  \resumeSubItem{Visual In-context Learning Model }
-    { Implemented contrastive learning for feature extraction in Visual In-Context Learning (ICL), using a two-stage process with unsupervised and supervised retrievers to select relevant demonstrations. Optimized retrieval performance through contrastive learning objectives, improving model transferability across downstream tasks. Resulted in a 10\% increase in accuracy over baseline in VOC the Pascal-5i dataset. }
-    
-    
-    
-    
+    \resumeSubheading
+      {Software Engineer}{Aug 2024 -- Oct 2024}
+      {Teaching Solved}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Built comprehensive full-stack web application centralizing language learning resources, \textbf{improving user satisfaction by 25\%} and driving engagement metrics.}
+        \resumeItem{Implemented advanced analytics instrumentation with PostHog, providing data-driven insights into user behavior and enabling product optimization that \textbf{increased customer retention by 30\%.}}
+        \resumeItem{Engineered intelligent resource discovery system with optimized search and filtering, \textbf{reducing user research time by 2+ hours weekly} and improving conversion metrics.}
+      \resumeItemListEnd
+      
+
+
+    \resumeSubheading
+      {Software Engineering Intern}{May 2023 -- Aug 2023}
+      {InduzBuy}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Engineered intelligent catalog normalization system leveraging GPT-3 and semantic similarity algorithms, achieving \textbf{95\% accuracy} in mapping diverse supplier product formats.}
+        \resumeItem{Led architectural migration from legacy PHP to Laravel framework, establishing modular design patterns and significantly improving codebase maintainability and test coverage.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Oct 2019 - Aug 2022}
+      {ICICI Lombard}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed GraphDB-based decision engine using Neo4j and Python for dynamic insurance premium calculation, \textbf{delivering 40\% improvement} in system performance for calculation-intensive workflows.}
+        \resumeItem{Led end-to-end redesign and development of customer renewal portal, architecting mobile-first responsive interface with ReactJS, \textbf{reducing checkout abandonment by 42\%} and driving significant revenue impact.}
+        \resumeItem{Rapidly prototyped and launched mobile CRM application enabling remote field agent operations during COVID-19, \textbf{increasing team productivity by 30\%} and maintaining business continuity.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer}{Jan 2019 - Oct 2019}
+      {AutoNinja}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Architected comprehensive error logging and monitoring infrastructure using Sentry, \textbf{reducing Mean Time to Repair (MTTR) by 40\%} through improved observability and incident response.}
+        \resumeItem{Engineered real-time vehicle delivery tracking system providing customers with granular status updates, improving customer experience and reducing support inquiries.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{LibriCasts} $|$ \emph{Python, Flask, Github Gists, htmx}}{Jan 2024 -- Mar 2024}
+          \resumeItemListStart
+          \resumeItem{Developed an open-source application to parse audiobook RSS feeds from Librivox.org and integrate them into PocketCasts.}
+          \resumeItem{Resolved broken RSS feeds and deployed corrected versions via GitHub Gists for community use.}
+          \resumeItem{Built a lightweight front end using Flask Templates and HTMX, ensuring a seamless user experience.}
+          
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Data Processing Pipeline} $|$ \emph{Scala, Kubernetes, Hadoop, Apache Spark, neo4j}}{Jan 2023 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a scalable data-processing pipeline to process spatial data using open NYC taxi Dataset.}
+            \resumeItem{Performed hot-spot analysis using k-means and pageRank algorithms.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{catELMo TCR-Epitope Binding Affinity Prediction} $|$ \emph{PyTorch, Deep Learning}}{2023}
+          \resumeItemListStart
+            \resumeItem{Designed and trained a CNN to predict TCR-Epitope binding affinity using embeddings generated by catELMo, achieving \textbf{90\% accuracy} on the test set.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{LLM Science Exam} $|$ \emph{TensorFlow, DeBerta, RAG, Cohere APIs}}{2023}
+          \resumeItemListStart
+            \resumeItem{Trained a DeBerta-v2 LLM to answer STEM multiple-choice questions, implementing RAG system using Cohere APIs and TF-IDF for contextual retrieval, achieving \textbf{MAP@3 score of 0.92} on Kaggle competition test dataset.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Visual In-Context Learning Model} $|$ \emph{PyTorch, Contrastive Learning}}{2023}
+          \resumeItemListStart
+            \resumeItem{Implemented contrastive learning for feature extraction in Visual In-Context Learning using unsupervised and supervised retrievers, \textbf{improving model accuracy by 10\%}} over baseline on Pascal-5i dataset.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arizona State University}{Tempe, AZ}
+      {Master's in Computer Science GPA: 3.6}{Aug 2022 -- May 2024}
+    \resumeItemListStart
+      \resumeItem{Relevant Coursework: Data Processing at Scale, Data Visualization, Data mining, Applied Cryptography }
+    \resumeItemListEnd
+    \resumeSubheading
+      {PES University}{Bangalore, India}
+      {B.Tech Mechanical Engineering; Minor's in Computer Science GPA 7.6/10}{Aug 2014 -- May 2018}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures, Database Management, Algorithms, Operating Systems}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
 %
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+
+ \section{Awards/Achievements}
+ \resumeItemListStart
+ \resumeItem{STAR Intern Award 2019 - Autoninja}
+ \resumeItemListEnd
+
 
 %-------------------------------------------
 \end{document}
-

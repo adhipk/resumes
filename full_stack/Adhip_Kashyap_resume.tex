@@ -125,8 +125,8 @@
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, JavaScript, SQL, PHP, Java, Go, C/C++, Scala, Rust} \\
-     \textbf{Frameworks/Libraries}{: React, NextJs, Tailwind, D3.js, Flask, FastAPI, Apache Spark, Hadoop, Laravel, numPy, sciPy, openCV} \\
-     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, AWS, Sentry, PostHog, Drizzle, Kubernetes } \\
+     \textbf{Frameworks/Libraries}{: React, NextJs, Tailwind, D3.js, Flask, FastAPI, Apache Spark, Hadoop, Laravel, numPy, sciPy, openCV, PyTorch, TensorFlow, Hugging Face, XGBoost, pandas} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, AWS, Sentry, PostHog, Drizzle, Kubernetes, Redis, Neo4j, Vapi} \\
     }}
  \end{itemize}
 
@@ -136,12 +136,34 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer}{Aug 2024 -- Present}
+      {AI Software Engineer}{Oct 2025 -- Present}
+      {Hoag Hospital}{Orange County, CA}
+      \resumeItemListStart
+        \resumeItem{Engineered production AI call center agents handling autonomous appointment booking and patient communications at scale.}
+        \resumeItem{Architected agent configuration management system using infrastructure-as-code principles with version control and automated deployment scripts across multiple environments.}
+        \resumeItem{Designed and implemented CI/CD pipelines enabling continuous deployment of agent updates, \textbf{reducing deployment cycles by 80\%} and enabling rapid iteration.}
+        \resumeItem{Built robust integrations with Epic EHR platform, enabling AI agents to autonomously manage imaging appointments while maintaining data integrity and HIPAA compliance.}
+        \resumeItem{Developed order upload and review workflows bridging AI agents with human staff, establishing quality assurance processes and maintaining high accuracy standards.}
+        \resumeItem{Led comprehensive compliance and adversarial testing program; engineered custom testing harnesses connected to Vapi voice platform for automated jailbreak evaluation and security assessment.}
+        \resumeItem{Created intelligent test case generation system from phone transcripts, \textbf{accelerating regression testing cycles by 60\%}} and enabling data-driven quality metrics.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Client Solutions Architect}{Apr 2025 -- Sep 2025}
+      {TechAhead}{Thousand Oaks, CA}
+      \resumeItemListStart
+        \resumeItem{Architect scalable backend systems and enterprise infrastructure solutions, designing high-performance systems for mission-critical applications.}
+        \resumeItem{Develop comprehensive cost proposals and technical roadmaps translating client requirements into strategic infrastructure recommendations.}
+        \resumeItem{Design AI integration strategies that enhance application capabilities and create measurable business value for enterprise clients.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Aug 2024 -- Oct 2024}
       {Teaching Solved}{Tempe, AZ}
       \resumeItemListStart
-        \resumeItem{Designed and developed a full-stack web application to simplify access to language resources for teachers, \textbf{improving user satisfaction by 25\%.}}
-        \resumeItem{Implemented analytics using Posthog, resulting in a better understanding of the customer journey, leading to \textbf{30\% increase in customer retention.}}
-        \resumeItem{Created a search engine for resource filtering, \textbf{saving users 2 hours weekly.}}
+        \resumeItem{Built comprehensive full-stack web application centralizing language learning resources, \textbf{improving user satisfaction by 25\%} and driving engagement metrics.}
+        \resumeItem{Implemented advanced analytics instrumentation with PostHog, providing data-driven insights into user behavior and enabling product optimization that \textbf{increased customer retention by 30\%.}}
+        \resumeItem{Engineered intelligent resource discovery system with optimized search and filtering, \textbf{reducing user research time by 2+ hours weekly} and improving conversion metrics.}
       \resumeItemListEnd
       
 
@@ -150,24 +172,24 @@
       {Software Engineering Intern}{May 2023 -- Aug 2023}
       {InduzBuy}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Developed scripts using GPT-3 and string similarity metrics to normalize supplier catalogs with \textbf{accuracy of 95\%.}}
-        \resumeItem{Spearheaded the migration to Laravel -- streamlining the Data Models for improved modularity and maintainability.}
+        \resumeItem{Engineered intelligent catalog normalization system leveraging GPT-3 and semantic similarity algorithms, achieving \textbf{95\% accuracy} in mapping diverse supplier product formats.}
+        \resumeItem{Led architectural migration from legacy PHP to Laravel framework, establishing modular design patterns and significantly improving codebase maintainability and test coverage.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Oct 2019 - Aug 2022}
       {ICICI Lombard}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Created a GraphDB-based decision tree to compute insurance premium components, \textbf{improving load times by 40\%}}
-        \resumeItem{Led the development of a new customer renewal portal, resulting in \textbf{42\% decrease in checkout abandonment.}}
-        \resumeItem{Built a mobile CRM app for remote work during COVID-19, boosting efficiency by 30\%. }
+        \resumeItem{Designed and deployed GraphDB-based decision engine using Neo4j and Python for dynamic insurance premium calculation, \textbf{delivering 40\% improvement} in system performance for calculation-intensive workflows.}
+        \resumeItem{Led end-to-end redesign and development of customer renewal portal, architecting mobile-first responsive interface with ReactJS, \textbf{reducing checkout abandonment by 42\%} and driving significant revenue impact.}
+        \resumeItem{Rapidly prototyped and launched mobile CRM application enabling remote field agent operations during COVID-19, \textbf{increasing team productivity by 30\%} and maintaining business continuity.}
       \resumeItemListEnd
     \resumeSubheading
       {Software Engineer}{Jan 2019 - Oct 2019}
       {AutoNinja}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Built error logging tools using Sentry resulting in \textbf{40\% reductions Mean time to Repair.}}
-        \resumeItem{Designed and implemented a real-time car delivery tracking system, providing customers with updates on their vehicle's delivery status.}
+        \resumeItem{Architected comprehensive error logging and monitoring infrastructure using Sentry, \textbf{reducing Mean Time to Repair (MTTR) by 40\%} through improved observability and incident response.}
+        \resumeItem{Engineered real-time vehicle delivery tracking system providing customers with granular status updates, improving customer experience and reducing support inquiries.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -188,6 +210,21 @@
           \resumeItemListStart
             \resumeItem{Developed a scalable data-processing pipeline to process spatial data using open NYC taxi Dataset.}
             \resumeItem{Performed hot-spot analysis using k-means and pageRank algorithms.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{catELMo TCR-Epitope Binding Affinity Prediction} $|$ \emph{PyTorch, Deep Learning}}{2023}
+          \resumeItemListStart
+            \resumeItem{Designed and trained a CNN to predict TCR-Epitope binding affinity using embeddings generated by catELMo, achieving \textbf{90\% accuracy} on the test set.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{LLM Science Exam} $|$ \emph{TensorFlow, DeBerta, RAG, Cohere APIs}}{2023}
+          \resumeItemListStart
+            \resumeItem{Trained a DeBerta-v2 LLM to answer STEM multiple-choice questions, implementing RAG system using Cohere APIs and TF-IDF for contextual retrieval, achieving \textbf{MAP@3 score of 0.92} on Kaggle competition test dataset.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Visual In-Context Learning Model} $|$ \emph{PyTorch, Contrastive Learning}}{2023}
+          \resumeItemListStart
+            \resumeItem{Implemented contrastive learning for feature extraction in Visual In-Context Learning using unsupervised and supervised retrievers, \textbf{improving model accuracy by 10\%}} over baseline on Pascal-5i dataset.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 

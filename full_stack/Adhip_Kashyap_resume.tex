@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -18,7 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+%\input{glyphtounicode}
 
 
 %----------FONT OPTIONS----------
@@ -40,11 +40,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.75in}
-\addtolength{\evensidemargin}{-0.75in}
-\addtolength{\textwidth}{1.5in}
-\addtolength{\topmargin}{-0.75in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.1in}
 
 \urlstyle{same}
 
@@ -54,11 +54,11 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\Large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+%\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -69,11 +69,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       {#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-6pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -140,56 +140,39 @@
       {Hoag Hospital}{Orange County, CA}
       \resumeItemListStart
         \resumeItem{Engineered production AI call center agents handling autonomous appointment booking and patient communications at scale.}
-        \resumeItem{Architected agent configuration management system using infrastructure-as-code principles with version control and automated deployment scripts across multiple environments.}
-        \resumeItem{Designed and implemented CI/CD pipelines enabling continuous deployment of agent updates, \textbf{reducing deployment cycles by 80\%} and enabling rapid iteration.}
-        \resumeItem{Built robust integrations with Epic EHR platform, enabling AI agents to autonomously manage imaging appointments while maintaining data integrity and HIPAA compliance.}
-        \resumeItem{Developed order upload and review workflows bridging AI agents with human staff, establishing quality assurance processes and maintaining high accuracy standards.}
-        \resumeItem{Led comprehensive compliance and adversarial testing program; engineered custom testing harnesses connected to Vapi voice platform for automated jailbreak evaluation and security assessment.}
-        \resumeItem{Created intelligent test case generation system from phone transcripts, \textbf{accelerating regression testing cycles by 60\%}} and enabling data-driven quality metrics.}
+        \resumeItem{Architected agent configuration management system and CI/CD pipelines, \textbf{reducing deployment cycles by 80\%.}}
+        \resumeItem{Built robust integrations with Epic EHR platform, enabling AI agents to autonomously manage imaging appointments while maintaining HIPAA compliance.}
+        \resumeItem{Led comprehensive adversarial testing program; created test case generation system from phone transcripts, \textbf{accelerating regression cycles by 60\%.}}
       \resumeItemListEnd
 
     \resumeSubheading
       {Client Solutions Architect}{Apr 2025 -- Sep 2025}
       {TechAhead}{Thousand Oaks, CA}
       \resumeItemListStart
-        \resumeItem{Architect scalable backend systems and enterprise infrastructure solutions, designing high-performance systems for mission-critical applications.}
-        \resumeItem{Develop comprehensive cost proposals and technical roadmaps translating client requirements into strategic infrastructure recommendations.}
-        \resumeItem{Design AI integration strategies that enhance application capabilities and create measurable business value for enterprise clients.}
+        \resumeItem{Architected scalable backend systems and enterprise infrastructure solutions for mission-critical applications; developed comprehensive cost proposals and technical roadmaps.}
+        \resumeItem{Designed AI integration strategies enhancing application capabilities and creating measurable business value for enterprise clients.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Aug 2024 -- Oct 2024}
       {Teaching Solved}{Tempe, AZ}
       \resumeItemListStart
-        \resumeItem{Built comprehensive full-stack web application centralizing language learning resources, \textbf{improving user satisfaction by 25\%} and driving engagement metrics.}
-        \resumeItem{Implemented advanced analytics instrumentation with PostHog, providing data-driven insights into user behavior and enabling product optimization that \textbf{increased customer retention by 30\%.}}
-        \resumeItem{Engineered intelligent resource discovery system with optimized search and filtering, \textbf{reducing user research time by 2+ hours weekly} and improving conversion metrics.}
-      \resumeItemListEnd
-      
-
-
-    \resumeSubheading
-      {Software Engineering Intern}{May 2023 -- Aug 2023}
-      {InduzBuy}{Bangalore, India}
-      \resumeItemListStart
-        \resumeItem{Engineered intelligent catalog normalization system leveraging GPT-3 and semantic similarity algorithms, achieving \textbf{95\% accuracy} in mapping diverse supplier product formats.}
-        \resumeItem{Led architectural migration from legacy PHP to Laravel framework, establishing modular design patterns and significantly improving codebase maintainability and test coverage.}
+        \resumeItem{Built full-stack web application centralizing language learning resources, \textbf{improving user satisfaction by 25\%} and driving engagement.}
+        \resumeItem{Implemented analytics instrumentation with PostHog, enabling product optimization that \textbf{increased customer retention by 30\%.}}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Oct 2019 - Aug 2022}
       {ICICI Lombard}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Designed and deployed GraphDB-based decision engine using Neo4j and Python for dynamic insurance premium calculation, \textbf{delivering 40\% improvement} in system performance for calculation-intensive workflows.}
-        \resumeItem{Led end-to-end redesign and development of customer renewal portal, architecting mobile-first responsive interface with ReactJS, \textbf{reducing checkout abandonment by 42\%} and driving significant revenue impact.}
-        \resumeItem{Rapidly prototyped and launched mobile CRM application enabling remote field agent operations during COVID-19, \textbf{increasing team productivity by 30\%} and maintaining business continuity.}
+        \resumeItem{Designed and deployed GraphDB-based decision engine using Neo4j and Python for dynamic insurance premium calculation, \textbf{delivering 40\% improvement} in system performance.}
+        \resumeItem{Led end-to-end redesign of customer renewal portal with ReactJS, \textbf{reducing checkout abandonment by 42\%} and driving revenue impact.}
       \resumeItemListEnd
     \resumeSubheading
       {Software Engineer}{Jan 2019 - Oct 2019}
       {AutoNinja}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Architected comprehensive error logging and monitoring infrastructure using Sentry, \textbf{reducing Mean Time to Repair (MTTR) by 40\%} through improved observability and incident response.}
-        \resumeItem{Engineered real-time vehicle delivery tracking system providing customers with granular status updates, improving customer experience and reducing support inquiries.}
+        \resumeItem{Architected error logging infrastructure using Sentry, \textbf{reducing MTTR by 40\%}; engineered real-time vehicle tracking system improving customer experience.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -198,33 +181,19 @@
 \section{Personal Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{LibriCasts} $|$ \emph{Python, Flask, Github Gists, htmx}}{Jan 2024 -- Mar 2024}
+          {\textbf{Downmark} $|$ \emph{React, Puppeteer, Bun, Docker}}{2024}
           \resumeItemListStart
-          \resumeItem{Developed an open-source application to parse audiobook RSS feeds from Librivox.org and integrate them into PocketCasts.}
-          \resumeItem{Resolved broken RSS feeds and deployed corrected versions via GitHub Gists for community use.}
-          \resumeItem{Built a lightweight front end using Flask Templates and HTMX, ensuring a seamless user experience.}
-          
+          \resumeItem{Built web application converting webpages to clean Markdown using headless Chrome; deployed scalable Docker architecture on Fly.io.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Data Processing Pipeline} $|$ \emph{Scala, Kubernetes, Hadoop, Apache Spark, neo4j}}{Jan 2023 -- May 2023}
+          {\textbf{Medical Videos Chatbot} $|$ \emph{Next.js, TypeScript, NLP}}{2025}
           \resumeItemListStart
-            \resumeItem{Developed a scalable data-processing pipeline to process spatial data using open NYC taxi Dataset.}
-            \resumeItem{Performed hot-spot analysis using k-means and pageRank algorithms.}
+          \resumeItem{Developed interactive chatbot interface for medical video content enabling natural language queries over video libraries.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{catELMo TCR-Epitope Binding Affinity Prediction} $|$ \emph{PyTorch, Deep Learning}}{2023}
+          {\textbf{LibriCasts} $|$ \emph{Python, Flask, htmx}}{2024}
           \resumeItemListStart
-            \resumeItem{Designed and trained a CNN to predict TCR-Epitope binding affinity using embeddings generated by catELMo, achieving \textbf{90\% accuracy} on the test set.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{LLM Science Exam} $|$ \emph{TensorFlow, DeBerta, RAG, Cohere APIs}}{2023}
-          \resumeItemListStart
-            \resumeItem{Trained a DeBerta-v2 LLM to answer STEM multiple-choice questions, implementing RAG system using Cohere APIs and TF-IDF for contextual retrieval, achieving \textbf{MAP@3 score of 0.92} on Kaggle competition test dataset.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Visual In-Context Learning Model} $|$ \emph{PyTorch, Contrastive Learning}}{2023}
-          \resumeItemListStart
-            \resumeItem{Implemented contrastive learning for feature extraction in Visual In-Context Learning using unsupervised and supervised retrievers, \textbf{improving model accuracy by 10\%}} over baseline on Pascal-5i dataset.}
+          \resumeItem{Open-source tool parsing audiobook RSS feeds from Librivox.org for PocketCasts integration, serving thousands of users.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -234,25 +203,10 @@
     \resumeSubheading
       {Arizona State University}{Tempe, AZ}
       {Master's in Computer Science GPA: 3.6}{Aug 2022 -- May 2024}
-    \resumeItemListStart
-      \resumeItem{Relevant Coursework: Data Processing at Scale, Data Visualization, Data mining, Applied Cryptography }
-    \resumeItemListEnd
     \resumeSubheading
       {PES University}{Bangalore, India}
-      {B.Tech Mechanical Engineering; Minor's in Computer Science GPA 7.6/10}{Aug 2014 -- May 2018}
-      \resumeItemListStart
-        \resumeItem{Relevant Coursework: Data Structures, Database Management, Algorithms, Operating Systems}
-    \resumeItemListEnd
+      {B.Tech Mechanical Engineering; Minor's in Computer Science}{Aug 2014 -- May 2018}
   \resumeSubHeadingListEnd
-
-
-%
-
- \section{Awards/Achievements}
- \resumeItemListStart
- \resumeItem{STAR Intern Award 2019 - Autoninja}
- \resumeItemListEnd
-
 
 %-------------------------------------------
 \end{document}
